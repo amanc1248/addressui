@@ -1,0 +1,168 @@
+/* THE WHOLE SECTION, 1)Navigation-Bar-Division 2)Address-Division */
+.theBigContainer{
+  background-color: #EFF0F4;
+  height: 625px;
+  padding: 2%;
+  margin: 15% 0 15% 0;
+}
+
+/* 1st) Navigation-Bar-Division */
+.theNavbar{
+  background-color: #EFF0F4;
+  font-size: 13px;
+  height: 575px;
+}
+ul{
+  list-style-type: none;
+}
+/* 2nd) Address-Division */
+.addressBlocks{
+  height: 100%;
+}
+
+ /* 2nd) A-D
+  2.1 Address-Container-Div (For containing the Address Table)  */
+.addressContainer{
+  border: 1px solid rgb(224, 227, 232);
+  box-shadow: 1px 1px 2px 2px rgb(240, 218, 229);
+  background-color: white;
+  margin:0 5% 0 0;
+  padding: 3%;
+  width: 100%;
+  position: absolute;
+}
+
+/* 2.1.1 Address-Table div (For styling the address table) */
+table{
+  width: 100%;
+}
+
+
+
+
+th,td{
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+th{
+  color: dimgrey;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1vw;
+  padding-bottom: 0;
+  background-color: #F5F5F5;
+}
+td{
+  padding: 20px;
+  font-size: 30px;
+  font-size: 1vw;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.addAddressButton{
+  margin-top: 3%;
+  text-align: right;
+}
+
+.labelColumn{
+   color:dimgray;
+    font-size: 15px;
+    font-weight:500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+
+  }
+  /* styling inputs, select elements and textarea */
+   select,input{
+     border: 3px solid rgb(248, 246, 246);
+     border-radius: 4px;
+     box-sizing: border-box;
+    color: dimgray;
+    height: 45px;
+    padding: 6px;
+    width: 100%;
+}
+.inputColumn{
+  width: 100%;
+}
+.addressBook{
+  background-color: white;
+  box-shadow: 1px 1px 2px 2px rgb(240, 218, 229);
+  display: none;
+  padding:3%;
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+}
+.firstDivisionNameNumber{
+  display: inline-block;
+  width: 45%;
+}
+#firstDiv{
+  position: relative;
+  vertical-align: top;
+
+}
+#secondDiv{
+  margin-left: 10%;
+}
+.cancelOrSaveButton{
+  margin-top: 2%;
+  text-align: right;
+
+
+}
+.cancelButton{
+  background-color: #DADADA;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: dimgrey;
+  height: 2.5em;
+  margin-right: 2%;
+  width:20%;
+
+
+}
+.saveButton{
+  background-color: #D0611E;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  height: 2.5em;
+  width: 20%;
+}
+ @media screen and (max-width:1000px)  {
+   .theNavbar{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+  }
+  .theBigContainer{
+    display: block;
+    height: 1000px;
+    padding: 0;
+  }
+.addressBlocks{
+  margin: 4%;
+}
+  .addressContainer{
+    margin: 0;
+    /* width: 95%; */
+  }
+  .addressBook{
+    margin:0;
+    padding: 10%;
+  }
+  .firstDivisionNameNumber{
+    display:block;
+    width: 100%;
+  }
+  #secondDiv{
+    margin-left: 0;
+  }
+}
